@@ -1,0 +1,10 @@
+<div>
+  <span class="content">
+    <button mat-raised-button color="primary" (click)="upgradeBigger()"
+      [disabled]="howBigger.times(10).gt(this.theNumber)">Upgrade ({{howBigger.times(10).toFixed(2)}})</button>
+  </span>
+  <span class="content">
+    <button mat-raised-button color="primary" (click)="upgradeBigger2()"
+      [disabled]="howBigger2.times(100).gt(this.theNumber)">Upgrade Upgrader ({{howBigger2.times(100).toFixed(2)}})</button>
+  </span>
+</div>

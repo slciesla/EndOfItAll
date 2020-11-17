@@ -1,0 +1,8 @@
+<div>
+  <div *ngFor="let ach of achievements">
+    <div class="chievo" [ngClass]="{'unachieved': !ach.achieved}">
+      <img src="assets/star.png" height="50" width="50" >
+      <span class="chievoText">{{ach.text}}</span>
+    </div>
+  </div>
+</div>

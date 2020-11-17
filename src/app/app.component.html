@@ -1,16 +1,24 @@
 <div class="main-container">
-  <mat-tab-group animationDuration="0ms">
+  <mat-tab-group mat-stretch-tabs animationDuration="0ms">
     <mat-tab label="Game">
-      <app-game></app-game>
+      <div class="content">
+        <app-main-view></app-main-view>
+      </div>
     </mat-tab>
     <mat-tab label="Achievements">
-      <app-achievements></app-achievements>
+      <div class="content">
+        <app-achievements></app-achievements>
+      </div>
     </mat-tab>
     <mat-tab label="Statistics">
-      <app-statistics></app-statistics>
+      <div class="contendiv">
+        <app-statistics></app-statistics>
+      </div>
     </mat-tab>
     <mat-tab label="Options">
-      <app-options></app-options>
+      <div class="content">
+        <app-options></app-options>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>
